@@ -21,6 +21,7 @@ header {
   padding: 15px 0;
   position: relative;
   margin-bottom: 30px; /* Adds some spacing before the footer */
+  border-radius: 6px;
 }
 
 header ul {
@@ -97,7 +98,8 @@ footer {
   padding: 15px 0;
   position: relative;
   margin-top: 30px; /* Adds some spacing before the footer */
-}
+  border-radius: 6px;
+} 
 
 footer ul {
   list-style-type: none;
@@ -128,3 +130,22 @@ img {
   border-radius: 12px; /* Adjust the value for more or less rounding */
 }
 
+.footer-buttons {
+  text-align: center;
+  margin-top: 20px;
+  display: flex; /* Use flexbox to arrange items horizontally */
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;
+}
+
+.footer-buttons a,
+.footer-buttons img {
+  margin: 0px;
+}
+
+.footer-buttons img {
+  width: 110px !important;
+  border-radius: 1px;
+  cursor: pointer;
+  object-fit: contain;
+}

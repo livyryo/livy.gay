@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Meta information for the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,6 +31,25 @@
             font-size: 1.1em;
             line-height: 1.6;
         }
+        .footer-buttons {
+            text-align: center;
+            margin-top: 20px;
+            display: flex; /* Use flexbox to arrange items horizontally */
+            justify-content: center; /* Center the buttons horizontally */
+            align-items: center;
+        }
+
+        .footer-buttons a,
+        .footer-buttons img {
+        margin: 0px;
+        }
+
+        .footer-buttons img {
+        width: 110px !important;
+        border-radius: 1px;
+        cursor: pointer;
+        object-fit: contain;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +61,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="whatiuse.html">The Arsenal</a></li>
+                <li><a href="changelog.html">Changelog</a></li>
             </ul>
         </nav>
     </header>
@@ -55,7 +79,17 @@
             <li><a href="https://www.translifeline.org">Trans Lifeline</a></li>
             <li><a href="Public_Domain_License.html">Disclaimer: Public Domain License</a></li>
             <li><a href="https://bsky.app/profile/livy.gay">Bluesky</a></li>
+            <li><a href="credits.html">Credits</a></li>
         </ul>
+        
+        <!-- Centered buttons with images below footer links -->
+        <div class="footer-buttons">
+            <a href="https://linuxmint.com/"><img src="/buttons/linuxnow.jpg" alt="Linux NOW"></a>
+            <a><img src="/buttons/bestvwmonitor.gif" alt="My ass is not developing for mobile"></a>
+            <a><img src="/buttons/transgender.gif" alt="This site was made by a transgender"></a>
+            <a href="https://neocities.org"><img src="/buttons/neocities-purple.png" alt="This site is hosted on Neocities"></a>
+            <a href="https://www.youtube.com/watch?v=ZVFpRQdOuQ0"><img src="/buttons/mkdabest.png" alt="meta knight da best"></a>
+        </div>
     </footer>
 </body>
 </html>
