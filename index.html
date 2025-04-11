@@ -22,13 +22,14 @@
             margin: 20px auto;
             text-align: center;
             box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ffd4a3;
         }
         .about-me h2 {
             font-size: 1.5em;
             margin-bottom: 10px;
         }
         .about-me p {
-            font-size: 1.1em;
+            font-size: 1.3em;
             line-height: 1.6;
         }
         .footer-buttons {
@@ -52,6 +53,58 @@
         }
     </style>
 </head>
+<div id="mobile-warning" style="
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(13, 43, 69, 0.95);
+    color: #ffd4a3;
+    z-index: 9999;
+    font-family: 'EarlyGameBoy', sans-serif;
+    font-size: 14px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+">
+    <div style="
+        background-color: #544e68;
+        border: 2px solid #ffaa5e;
+        padding: 20px;
+        border-radius: 16px;
+        max-width: 90%;
+        margin: 0 auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    ">
+        <strong>This site barely works on mobile lol</strong><br><br>
+        Enter at your own risk
+        <br><br>
+        <button onclick="document.getElementById('mobile-warning').style.display='none'" style="
+            background-color: #ffaa5e;
+            color: #203c56;
+            font-family: 'EarlyGameBoy', sans-serif;
+            font-size: 14px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        ">Yes ma'am o7</button>
+    </div>
+</div>
+
+<script>
+    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        const mw = document.getElementById('mobile-warning');
+        mw.style.display = 'flex';
+    }
+</script>
+
+
 <body>
     <!-- Website Header -->
     <header>

@@ -4,9 +4,14 @@
   src: url('early_gameboy.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'PixelOperator';
+  src: url('PixelOperator/PixelOperator.ttf');
+}
+
 /* Basic styling for the blog with updated color palette */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'PixelOperator';
   margin: 0;
   padding: 20px;
   background-color: #0d2b45;
@@ -22,6 +27,7 @@ header {
   position: relative;
   margin-bottom: 30px; /* Adds some spacing before the footer */
   border-radius: 6px;
+  border: 2px solid #ffaa5e;
 }
 
 header ul {
@@ -31,14 +37,15 @@ header ul {
 }
 
 header ul li {
+  font-family: 'PixelOperator';
   display: inline;
   margin-right: 20px;
 }
 
 header a {
   color: #ffaa5e;
-  text-decoration: none;
-  font-size: 10px;
+  text-decoration: underline;
+  font-size: 16px;
 }
   
 header a:hover {
@@ -57,11 +64,14 @@ h2 {
 .post {
   background: #544e68;
   padding: 15px;
-  margin: 20px 0;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin: 10px 0;
   border-radius: 5px;
   color: #ffd4a3;
-  font-size: 18px; 
+  font-size: 20px; 
   line-height: 1.6;
+  border: 1px solid #ffd4a3;
 }
 
 .post_list {
@@ -70,10 +80,16 @@ h2 {
   margin: 20px 0;
   border-radius: 5px;
   color: #ffd4a3;
+  border: 1px solid #ffaa5e;
+  font-size: inherit;
+}
+
+.post_list p {
+  font-size: 20px;
 }
 
 .post_meta {
-  font-size: 12px;
+  font-size: 14px;
   color: #ffb07b;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -108,14 +124,15 @@ footer ul {
 }
 
 footer ul li {
+  font-family: 'PixelOperator';
   display: inline;
   margin-right: 20px;
 }
 
 footer a {
   color: #ffaa5e;
-  text-decoration: none;
-  font-size: 10px;
+  text-decoration: underline;
+  font-size: 16px;
 }
   
 footer a:hover {
